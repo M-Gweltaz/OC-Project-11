@@ -1,0 +1,9 @@
+.DropDownMenu {
+	margin: 1em 0;
+}
+
+.DropDownMenu_title {
+	margin-bottom: 0.75em;
+	background-color: #ff6060;
+	color: white;
+}

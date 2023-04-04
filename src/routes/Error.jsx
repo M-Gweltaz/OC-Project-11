@@ -5,9 +5,13 @@ import Footer from '../Components/Footer';
 export default function Error() {
 	return (
 		<>
-			<Header />
-			<Error404 />
-			<Footer />
+			<div className='container'>
+				<div className='container_content'>
+					<Header />
+					<Error404 />
+				</div>
+				<Footer />
+			</div>
 		</>
 	);
 }

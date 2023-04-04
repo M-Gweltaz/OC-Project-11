@@ -5,9 +5,13 @@ import HomeHeroBanner from '../Components/home/HomeHeroBanner';
 export default function Home() {
 	return (
 		<>
-			<Header />
-			<HomeHeroBanner />
-			<Footer />
+			<div className='container'>
+				<div className='container_content'>
+					<Header />
+					<HomeHeroBanner />
+				</div>
+				<Footer />
+			</div>
 		</>
 	);
 }

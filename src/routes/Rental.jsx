@@ -4,8 +4,12 @@ import Footer from '../Components/Footer';
 export default function Rental() {
 	return (
 		<>
-			<Header />
-			<Footer />
+			<div className='container'>
+				<div className='container_content'>
+					<Header />
+				</div>
+				<Footer />
+			</div>
 		</>
 	);
 }

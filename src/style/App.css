@@ -43,4 +43,15 @@ a {
 
 body {
 	font-family: 'Montserrat', sans-serif;
+	height: 100%;
+}
+
+.container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.container_content {
+	flex-grow: 1;
 }
