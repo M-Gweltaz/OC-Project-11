@@ -1,9 +1,29 @@
 .DropDownMenu {
 	margin: 1em 0;
+	background-color: #f6f6f6;
+	border-radius: 0.313em;
 }
 
 .DropDownMenu_title {
-	margin-bottom: 0.75em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	background-color: #ff6060;
 	color: white;
+	border-radius: 0.625em;
+	height: 3.25em;
+	padding: 0 2em;
+}
+
+.DropDownMenu_title h3 {
+	font-weight: 500;
+}
+
+.DropDownMenu_title img {
+	cursor: pointer;
+}
+
+.DropDownMenu_text {
+	padding: 0.75em 2em 0.75em 2em;
+	color: #ff6060;
 }
