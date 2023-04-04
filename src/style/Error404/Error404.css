@@ -1,0 +1,23 @@
+.error404 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #ff6060;
+	margin: 3em 0;
+}
+
+.error404 h1 {
+	font-size: 18em;
+	font-weight: bolder;
+}
+
+.error404_message {
+	font-size: 2.25em;
+}
+
+.homepage_link {
+	color: #ff6060;
+	padding-top: 10em;
+	font-size: 1.125em;
+	text-decoration: underline;
+}

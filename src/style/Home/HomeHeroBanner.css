@@ -1,0 +1,63 @@
+/* // Styles for the top banner on the home page
+
+// Create three grid areas (boxes) that overlap each other, essentially creating three layers.
+// Grid box 1 (layer 1): Image
+// Grid box 2 (layer 2): Gradient overlay
+// Grid box 3 (layer 3): Call to action text/content */
+.top-banner-section {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 350px;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	align-content: center;
+	justify-content: center;
+	max-width: 80vw;
+	margin: auto;
+	padding-top: 2em;
+}
+/* image */
+.banner-image-div {
+	grid-area: 1 / 1 / 2 / 2;
+}
+/* gradient or other overlay */
+.banner-overlay-div {
+	grid-area: 1 / 1 / 2 / 2;
+}
+/* overlay objects like text, buttons, etc. */
+.banner-text-div {
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+/* Banner image (layer 1) */
+.banner-image {
+	display: grid;
+	min-width: 21.875em;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 1.563em;
+}
+
+/* Gradient overlay (layer 2)
+gradient overlay going from black to transparent.
+note: search for a gradient overlay generator to make this easier. */
+.banner-overlay-div {
+	display: grid;
+	max-width: 100%;
+	background: black;
+	opacity: 0.3;
+	border-radius: 1.563em;
+}
+
+/* Banner html components (layer 3)
+banner text */
+.banner-text-div {
+	z-index: 9999;
+	display: grid;
+	margin: auto;
+	color: white;
+	font-weight: bold;
+	font-size: 3em;
+	text-align: center;
+}

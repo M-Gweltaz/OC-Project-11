@@ -1,0 +1,26 @@
+.navbar {
+	min-width: 20em;
+}
+
+.navbar ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+.navbar li {
+	color: #ff6060;
+	font-size: 1.5em;
+}
+
+.active {
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+	.navbar {
+		min-width: 10em;
+	}
+	.navbar li {
+		font-size: 0.75em;
+	}
+}
