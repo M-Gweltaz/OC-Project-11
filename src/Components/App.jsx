@@ -17,7 +17,10 @@ export default function App() {
 			<Routes>
 				<Route path='/' element={<Home rentalData={rentalData} />} />
 				<Route path='/about' element={<About />} />
-				<Route path='/rental/:id' element={<Rental />} />
+				<Route
+					path='/rental/:id'
+					element={<Rental rentalData={rentalData} />}
+				/>
 				<Route path='/*' element={<Error />} />
 			</Routes>
 		</>
