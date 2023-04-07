@@ -1,0 +1,9 @@
+.mainHome {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: #f6f6f6;
+	border-radius: 1.563em;
+	max-width: 80vw;
+	margin: auto;
+	margin-top: 1.5em;
+}
