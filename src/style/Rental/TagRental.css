@@ -1,0 +1,10 @@
+.tagContainer {
+	background-color: #ff6060;
+	color: white;
+	font-size: 0.875em;
+	border-radius: 0.625em;
+}
+
+.tagContent {
+	padding: 0.5em 1em;
+}

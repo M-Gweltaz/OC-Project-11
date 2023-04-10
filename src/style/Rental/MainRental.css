@@ -1,0 +1,36 @@
+.mainRental {
+	max-width: 80vw;
+	color: #ff6060;
+	margin: auto;
+	padding: 1.5em 0;
+}
+
+.rentalHeaderContainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.rentalName {
+	font-size: 2.25em;
+}
+
+.rentalLocation {
+	font-size: 1.125em;
+}
+
+.rentalOwner {
+	display: flex;
+	height: 5em;
+}
+
+.rentalOwnerName {
+	padding-right: 1em;
+	font-size: 1.125em;
+	text-align: end;
+	margin: auto;
+}
+.rentalOwnerPicture {
+	object-fit: cover;
+	height: 100%;
+	border-radius: 100%;
+}

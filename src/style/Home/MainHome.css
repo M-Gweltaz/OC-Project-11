@@ -1,12 +1,15 @@
 .mainHome {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(auto-fit, 340px);
+	justify-content: center;
 	background-color: #f6f6f6;
 	border-radius: 1.563em;
 	max-width: 80vw;
 	margin: auto;
-	grid-gap: 0.584vw;
-	row-gap: 1.5vw;
+	grid-gap: 1.5em;
+	row-gap: 1.5em;
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
 }

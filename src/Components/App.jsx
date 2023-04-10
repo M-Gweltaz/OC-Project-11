@@ -10,16 +10,16 @@ import data from '../data/data_api.json';
 
 export default function App() {
 	// accessing and transfering the data as a State
-	const [rentalData, setRentalData] = useState(data);
+	const [rentalsDatas, setRentalsDatas] = useState(data);
 
 	return (
 		<>
 			<Routes>
-				<Route path='/' element={<Home rentalData={rentalData} />} />
+				<Route path='/' element={<Home rentalsDatas={rentalsDatas} />} />
 				<Route path='/about' element={<About />} />
 				<Route
 					path='/rental/:id'
-					element={<Rental rentalData={rentalData} />}
+					element={<Rental rentalsDatas={rentalsDatas} />}
 				/>
 				<Route path='/*' element={<Error />} />
 			</Routes>

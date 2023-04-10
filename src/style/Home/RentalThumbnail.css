@@ -1,8 +1,12 @@
+/* .link {
+
+	} */
+
 .rentalThumbnailContainer {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 25.5vw;
-	grid-template-columns: 25.5vw;
+	grid-template-rows: 21.25em;
+	grid-template-columns: 21.25em;
 	justify-content: center;
 	cursor: pointer;
 }
