@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import DropDownMenu from '../DropDownMenu.jsx';
 import TagRental from './TagRental.jsx';
 import RatingRental from './RatingRental.jsx';
 import '../../style/Rental/MainRental.css';
@@ -21,13 +22,14 @@ export default function MainRental({ rentalData }) {
 	let ownerNameHandling = host.name.split(' ');
 	let ownerFirstName = ownerNameHandling[0];
 	let onwerLastName = ownerNameHandling[1];
-
 	let onwerNameRendering = (
 		<div className='rentalOwnerName'>
 			<p className='rentalOwnerFirstName'>{ownerFirstName}</p>
 			<p className='rentalOwnerLastName'>{onwerLastName}</p>
 		</div>
 	);
+
+	let rentalTagsArray = tags.map((tag) => <TagRental tag={tag} key={tag} />);
 	console.log(rentalData);
 	return (
 		<>
@@ -47,8 +49,12 @@ export default function MainRental({ rentalData }) {
 					</div>
 				</div>
 				<div className='rentalDetailsContainer'>
-					<TagRental />
+					{rentalTagsArray}
 					<RatingRental rating={ratings} />
+				</div>
+				<div className='rentalDescriptionsContainer'>
+					<DropDownMenu title='Description' text={description} width='35vw' />
+					<DropDownMenu title='Équipements' list={equipements} width='35vw' />
 				</div>
 			</main>
 		</>

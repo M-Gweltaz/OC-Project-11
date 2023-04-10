@@ -1,8 +1,10 @@
 .tagContainer {
+	display: inline-block;
 	background-color: #ff6060;
 	color: white;
 	font-size: 0.875em;
 	border-radius: 0.625em;
+	margin: 1em 0.5em;
 }
 
 .tagContent {

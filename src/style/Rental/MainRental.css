@@ -29,8 +29,14 @@
 	text-align: end;
 	margin: auto;
 }
+
 .rentalOwnerPicture {
 	object-fit: cover;
 	height: 100%;
 	border-radius: 100%;
+}
+
+.rentalDescriptionsContainer {
+	display: flex;
+	justify-content: space-between;
 }
