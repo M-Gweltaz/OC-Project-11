@@ -1,7 +1,8 @@
-import { useState } from 'react';
 import DropDownMenu from '../DropDownMenu.jsx';
 import TagRental from './TagRental.jsx';
 import RatingRental from './RatingRental.jsx';
+import Carrousel from './Carrousel.jsx';
+
 import '../../style/Rental/MainRental.css';
 
 export default function MainRental({ rentalData }) {
@@ -19,6 +20,7 @@ export default function MainRental({ rentalData }) {
 		description,
 	} = rentalData;
 
+	// name rendering
 	let ownerNameHandling = host.name.split(' ');
 	let ownerFirstName = ownerNameHandling[0];
 	let onwerLastName = ownerNameHandling[1];
@@ -29,11 +31,14 @@ export default function MainRental({ rentalData }) {
 		</div>
 	);
 
+	// tag
 	let rentalTagsArray = tags.map((tag) => <TagRental tag={tag} key={tag} />);
+
 	console.log(rentalData);
 	return (
 		<>
 			<main className='mainRental'>
+				<Carrousel pictures={pictures} />
 				<div className='rentalHeaderContainer'>
 					<div className='rentalTitle'>
 						<h1 className='rentalName'>{title}</h1>

@@ -1,0 +1,32 @@
+.rentalPictureCarrousel {
+	position: relative;
+	height: 25.938em;
+	margin: 1em 0;
+}
+
+.arrowLeft {
+	z-index: 99;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-left: 1em;
+	cursor: pointer;
+}
+.arrowRight {
+	z-index: 99;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-right: 1em;
+	cursor: pointer;
+}
+
+.pictureActive img {
+	position: relative;
+	width: 100%;
+	height: 25.938em;
+	border-radius: 1.563em;
+	object-fit: cover;
+}

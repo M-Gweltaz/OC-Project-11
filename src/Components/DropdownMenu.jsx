@@ -23,7 +23,7 @@ export default function DropDownMenu({ title, text, list, width }) {
 			</div>
 
 			{text && isMenuOpen && <div className='DropDownMenu_text'>{text}</div>}
-			{list && list.length > 0 && isMenuOpen && (
+			{list && isMenuOpen && (
 				<ul className='DropDownMenu_list'>
 					{list.map((item) => (
 						<li key={item}>{item}</li>
