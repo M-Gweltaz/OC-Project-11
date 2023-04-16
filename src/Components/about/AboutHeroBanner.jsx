@@ -3,10 +3,10 @@ import heroBannerPicture from '../../assets/about_banner.png';
 
 export default function AboutHeroBanner() {
 	return (
-		<section className='top-banner-section'>
-			<div className='banner-image-div'>
+		<section className='top-Aboutbanner-section'>
+			<div className='aboutBanner-image-div'>
 				<img
-					className='banner-image'
+					className='aboutBanner-image'
 					src={heroBannerPicture}
 					alt='Banner Image'
 				/>

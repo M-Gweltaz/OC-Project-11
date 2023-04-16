@@ -4,13 +4,18 @@
 	margin: auto;
 	padding: 1.5em 0;
 }
-
+.rentalInfoContainer {
+	display: flex;
+	justify-content: space-between;
+}
 .rentalHeaderContainer {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 }
 
 .rentalName {
+	font-weight: 500;
 	font-size: 2.25em;
 }
 
@@ -43,7 +48,41 @@
 
 .rentalDetailsContainer {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.rentalTagsContainer {
 	margin: 0.5em 0;
+}
+
+@media (max-width: 1024px) {
+	.rentalInfoContainer {
+		flex-direction: column;
+	}
+
+	.rentalName {
+		font-size: 1.125em;
+	}
+
+	.rentalLocation {
+		font-size: 0.875em;
+	}
+
+	.rentalDetailsContainer {
+		flex-direction: row-reverse;
+	}
+
+	.rentalOwnerPicture {
+		max-height: 4em;
+	}
+
+	.rentalOwnerName {
+		font-size: 0.75em;
+	}
+
+	.rentalDescriptionsContainer {
+		flex-direction: column;
+	}
 }

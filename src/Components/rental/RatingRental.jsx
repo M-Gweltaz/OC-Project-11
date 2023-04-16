@@ -1,66 +1,66 @@
 import { useState } from 'react';
 import starRating from '../../assets/star_rating.png';
 import starActiveRating from '../../assets/star_active_rating.png';
-import '../../style/Rental/RatingsRental.css';
+import '../../style/Rental/RatingRental.css';
 
 export default function RatingRental({ rating }) {
 	let ratingRender;
 	switch (true) {
-		case (rating = '1'):
+		case rating == '1':
 			ratingRender = (
 				<div className='ratingsContainer'>
-					<img src={starRating}></img>
-					<img src={starRating}></img>
-					<img src={starRating}></img>
-					<img src={starRating}></img>
-					<img src={starActiveRating}></img>
+					<img src={starRating} className='ratingStar'></img>
+					<img src={starRating} className='ratingStar'></img>
+					<img src={starRating} className='ratingStar'></img>
+					<img src={starRating} className='ratingStar'></img>
+					<img src={starActiveRating} className='ratingStar'></img>
 				</div>
 			);
 			break;
-		case (rating = '2'):
+		case rating == '2':
 			ratingRender = (
 				<div className='ratingsContainer'>
-					<img src={starRating}></img>
-					<img src={starRating}></img>
-					<img src={starRating}></img>
-					<img src={starActiveRating}></img>
-					<img src={starActiveRating}></img>
-				</div>
-			);
-			break;
-
-		case (rating = '3'):
-			ratingRender = (
-				<div className='ratingsContainer'>
-					<img src={starRating}></img>
-					<img src={starRating}></img>
-					<img src={starActiveRating}></img>
-					<img src={starActiveRating}></img>
-					<img src={starActiveRating}></img>
+					<img src={starRating} className='ratingStar'></img>
+					<img src={starRating} className='ratingStar'></img>
+					<img src={starRating} className='ratingStar'></img>
+					<img src={starActiveRating} className='ratingStar'></img>
+					<img src={starActiveRating} className='ratingStar'></img>
 				</div>
 			);
 			break;
 
-		case (rating = '4'):
+		case rating == '3':
 			ratingRender = (
 				<div className='ratingsContainer'>
-					<img src={starRating}></img>
-					<img src={starActiveRating}></img>
-					<img src={starActiveRating}></img>
-					<img src={starActiveRating}></img>
-					<img src={starActiveRating}></img>
+					<img src={starRating} className='ratingStar'></img>
+					<img src={starRating} className='ratingStar'></img>
+					<img src={starActiveRating} className='ratingStar'></img>
+					<img src={starActiveRating} className='ratingStar'></img>
+					<img src={starActiveRating} className='ratingStar'></img>
 				</div>
 			);
 			break;
 
-		case (rating = '5'):
+		case rating == '4':
 			ratingRender = (
 				<div className='ratingsContainer'>
-					<img src={starActiveRating}></img>
-					<img src={starActiveRating}></img>
-					<img src={starActiveRating}></img>
-					<img src={starActiveRating}></img>
-					<img src={starActiveRating}></img>
+					<img src={starRating} className='ratingStar'></img>
+					<img src={starActiveRating} className='ratingStar'></img>
+					<img src={starActiveRating} className='ratingStar'></img>
+					<img src={starActiveRating} className='ratingStar'></img>
+					<img src={starActiveRating} className='ratingStar'></img>
+				</div>
+			);
+			break;
+
+		case rating == '5':
+			ratingRender = (
+				<div className='ratingsContainer'>
+					<img src={starActiveRating} className='ratingStar'></img>
+					<img src={starActiveRating} className='ratingStar'></img>
+					<img src={starActiveRating} className='ratingStar'></img>
+					<img src={starActiveRating} className='ratingStar'></img>
+					<img src={starActiveRating} className='ratingStar'></img>
 				</div>
 			);
 			break;
@@ -68,11 +68,11 @@ export default function RatingRental({ rating }) {
 		default:
 			ratingRender = (
 				<div className='ratingsContainer'>
-					<img src={starRating}></img>
-					<img src={starRating}></img>
-					<img src={starRating}></img>
-					<img src={starRating}></img>
-					<img src={starRating}></img>
+					<img src={starRating} className='ratingStar'></img>
+					<img src={starRating} className='ratingStar'></img>
+					<img src={starRating} className='ratingStar'></img>
+					<img src={starRating} className='ratingStar'></img>
+					<img src={starRating} className='ratingStar'></img>
 				</div>
 			);
 			break;

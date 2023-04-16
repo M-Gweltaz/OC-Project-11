@@ -23,12 +23,14 @@ export default function Carrousel({ pictures }) {
 
 	return (
 		<section className='rentalPictureCarrousel'>
-			<img
-				className='arrowLeft'
-				src={arrowLeft}
-				alt='previous pictures'
-				onClick={handlePreviousPictureClick}
-			/>
+			{pictures.length > 1 && (
+				<img
+					className='arrowLeft'
+					src={arrowLeft}
+					alt='previous pictures'
+					onClick={handlePreviousPictureClick}
+				/>
+			)}
 			{pictures.map((picture, index) => {
 				return (
 					<div
@@ -39,15 +41,19 @@ export default function Carrousel({ pictures }) {
 					</div>
 				);
 			})}
-			<img
-				className='arrowRight'
-				src={arrowRight}
-				alt='next pictures'
-				onClick={handleNextPictureClick}
-			/>
-			<div className='carrouselPagination'>
-				{currentPicture + 1}/{pictures.length}
-			</div>
+			{pictures.length > 1 && (
+				<img
+					className='arrowRight'
+					src={arrowRight}
+					alt='next pictures'
+					onClick={handleNextPictureClick}
+				/>
+			)}
+			{pictures.length > 1 && (
+				<div className='carrouselPagination'>
+					{currentPicture + 1}/{pictures.length}
+				</div>
+			)}
 		</section>
 	);
 }

@@ -1,11 +1,13 @@
 import { useParams, Navigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import MainRental from '../Components/rental/MainRental';
 
 export default function Rental({ rentalsDatas, activePage, setActivePage }) {
-	setActivePage('rentalPage');
+	useEffect(() => {
+		setActivePage('rentalPage');
+	});
 
 	const params = useParams();
 	const id = params.id;

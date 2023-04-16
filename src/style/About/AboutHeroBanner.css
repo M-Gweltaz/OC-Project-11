@@ -1,9 +1,9 @@
-.top-banner-section {
+.top-Aboutbanner-section {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 30vh;
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
+	grid-column-gap: 0em;
+	grid-row-gap: 0em;
 	align-content: center;
 	justify-content: center;
 	max-width: 80vw;
@@ -11,14 +11,15 @@
 	padding-top: 2em;
 }
 /* image */
-.banner-image-div {
+.aboutBanner-image-div {
 	grid-area: 1 / 1 / 2 / 2;
 }
 
 /* Banner image (layer 1) */
-.banner-image {
+.aboutBanner-image {
 	display: grid;
 	min-width: 21.875em;
+	height: 100%;
 	width: 100%;
 	object-fit: cover;
 	border-radius: 1.563em;

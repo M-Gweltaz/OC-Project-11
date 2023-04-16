@@ -7,9 +7,9 @@
 .top-banner-section {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 350px;
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
+	grid-template-rows: 13.938em;
+	grid-column-gap: 0em;
+	grid-row-gap: 0em;
 	align-content: center;
 	justify-content: center;
 	max-width: 80vw;
@@ -59,4 +59,23 @@ banner text */
 	font-weight: bold;
 	font-size: 3em;
 	text-align: center;
+}
+
+@media (max-width: 1042px) {
+	.top-banner-section {
+		grid-template-rows: 6.938em;
+	}
+	.banner-image-div {
+		max-height: 6.938em;
+	}
+	.banner-overlay-div {
+		max-height: 6.938em;
+	}
+	.banner-text-div {
+		max-height: 6.938em;
+		font-size: 1.5em;
+		text-align: left;
+		padding-left: 0.75em;
+		margin: auto;
+	}
 }

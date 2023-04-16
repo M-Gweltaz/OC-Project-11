@@ -38,27 +38,29 @@ export default function MainRental({ rentalData }) {
 		<>
 			<main className='mainRental'>
 				<Carrousel pictures={pictures} />
-				<div className='rentalHeaderContainer'>
-					<div className='rentalTitle'>
-						<h1 className='rentalName'>{title}</h1>
-						<p className='rentalLocation'>{location}</p>
+				<div className='rentalInfoContainer'>
+					<div className='rentalHeaderContainer'>
+						<div className='rentalTitle'>
+							<h1 className='rentalName'>{title}</h1>
+							<p className='rentalLocation'>{location}</p>
+						</div>
+						<div className='rentalTagsContainer'>{rentalTagsArray}</div>
 					</div>
-					<div className='rentalOwner'>
-						{onwerNameRendering}
-						<img
-							src={host.picture}
-							alt={host.name}
-							className='rentalOwnerPicture'
-						/>
+					<div className='rentalDetailsContainer'>
+						<div className='rentalOwner'>
+							{onwerNameRendering}
+							<img
+								src={host.picture}
+								alt={host.name}
+								className='rentalOwnerPicture'
+							/>
+						</div>
+						<RatingRental rating={rating} />
 					</div>
-				</div>
-				<div className='rentalDetailsContainer'>
-					<div className='rentalTagsContainer'>{rentalTagsArray}</div>
-					<RatingRental rating={rating} />
 				</div>
 				<div className='rentalDescriptionsContainer'>
-					<DropDownMenu title='Description' text={description} width='35vw' />
-					<DropDownMenu title='Équipements' list={equipments} width='35vw' />
+					<DropDownMenu title='Description' text={description} width='small' />
+					<DropDownMenu title='Équipements' list={equipments} width='small' />
 				</div>
 			</main>
 		</>

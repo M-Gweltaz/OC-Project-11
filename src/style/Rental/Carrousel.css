@@ -39,3 +39,12 @@
 	font-size: 1.125em;
 	padding-bottom: 1em;
 }
+
+@media (max-width: 1024px) {
+	.arrowLeft {
+		max-width: 2em;
+	}
+	.arrowRight {
+		max-width: 2.5em;
+	}
+}

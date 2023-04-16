@@ -4,9 +4,17 @@
 	color: white;
 	font-size: 0.875em;
 	border-radius: 0.625em;
-	margin: 1em 0.5em;
+	margin-right: 1em;
+	margin-top: 0.5em;
 }
 
 .tagContent {
 	padding: 0.5em 1em;
+}
+
+@media (max-width: 700px) {
+	.tagContent {
+		padding: 0.75em 2em;
+		font-size: 0.625em;
+	}
 }
