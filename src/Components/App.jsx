@@ -12,16 +12,43 @@ export default function App() {
 	// accessing and transfering the data as a State
 	const [rentalsDatas, setRentalsDatas] = useState(data);
 
+	const [activePage, setActivePage] = useState('homePage');
+
 	return (
 		<>
 			<Routes>
-				<Route path='/' element={<Home rentalsDatas={rentalsDatas} />} />
-				<Route path='/about' element={<About />} />
+				<Route
+					path='/'
+					element={
+						<Home
+							rentalsDatas={rentalsDatas}
+							activePage={activePage}
+							setActivePage={setActivePage}
+						/>
+					}
+				/>
+				<Route
+					path='/about'
+					element={
+						<About activePage={activePage} setActivePage={setActivePage} />
+					}
+				/>
 				<Route
 					path='/rental/:id'
-					element={<Rental rentalsDatas={rentalsDatas} />}
+					element={
+						<Rental
+							rentalsDatas={rentalsDatas}
+							activePage={activePage}
+							setActivePage={setActivePage}
+						/>
+					}
 				/>
-				<Route path='/*' element={<Error />} />
+				<Route
+					path='/*'
+					element={
+						<Error activePage={activePage} setActivePage={setActivePage} />
+					}
+				/>
 			</Routes>
 		</>
 	);

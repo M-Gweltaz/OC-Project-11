@@ -13,10 +13,10 @@ export default function MainRental({ rentalData }) {
 		cover,
 		pictures,
 		tags,
-		ratings,
+		rating,
 		location,
 		host,
-		equipements,
+		equipments,
 		description,
 	} = rentalData;
 
@@ -34,7 +34,6 @@ export default function MainRental({ rentalData }) {
 	// tag
 	let rentalTagsArray = tags.map((tag) => <TagRental tag={tag} key={tag} />);
 
-	console.log(rentalData);
 	return (
 		<>
 			<main className='mainRental'>
@@ -54,12 +53,12 @@ export default function MainRental({ rentalData }) {
 					</div>
 				</div>
 				<div className='rentalDetailsContainer'>
-					{rentalTagsArray}
-					<RatingRental rating={ratings} />
+					<div className='rentalTagsContainer'>{rentalTagsArray}</div>
+					<RatingRental rating={rating} />
 				</div>
 				<div className='rentalDescriptionsContainer'>
 					<DropDownMenu title='Description' text={description} width='35vw' />
-					<DropDownMenu title='Équipements' list={equipements} width='35vw' />
+					<DropDownMenu title='Équipements' list={equipments} width='35vw' />
 				</div>
 			</main>
 		</>

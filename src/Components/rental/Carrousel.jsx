@@ -4,6 +4,7 @@ import arrowRight from '../../assets/arrow_right.png';
 import '../../style/Rental/Carrousel.css';
 
 export default function Carrousel({ pictures }) {
+	console.log(pictures);
 	//carrousel
 	// current picture logic
 	const [currentPicture, setCurrentPicture] = useState(0);
@@ -45,6 +46,7 @@ export default function Carrousel({ pictures }) {
 				alt='next pictures'
 				onClick={handleNextPictureClick}
 			/>
+			<div className='carrouselPagination'></div>
 		</section>
 	);
 }

@@ -1,7 +1,11 @@
 .DropDownMenu {
 	margin: 1em 0;
-	background-color: #f6f6f6;
 	border-radius: 0.313em;
+	display: inline-block;
+}
+
+.DropDownMenuOpen {
+	background-color: #f6f6f6;
 }
 
 .DropDownMenu_title {
@@ -21,6 +25,9 @@
 }
 
 .DropDownMenu_text {
-	padding: 0.75em 2em 0.75em 2em;
-	color: #ff6060;
+	padding: 1em 2em 1em 2em;
+}
+
+.DropDownMenu_list {
+	padding: 1em 2em 1em 2em;
 }

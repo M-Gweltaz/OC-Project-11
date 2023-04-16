@@ -12,7 +12,8 @@
 	font-size: 1.5em;
 }
 
-.active {
+.activePage {
+	color: #ff6060;
 	text-decoration: underline;
 }
 

@@ -4,7 +4,9 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import MainRental from '../Components/rental/MainRental';
 
-export default function Rental({ rentalsDatas }) {
+export default function Rental({ rentalsDatas, activePage, setActivePage }) {
+	setActivePage('rentalPage');
+
 	const params = useParams();
 	const id = params.id;
 
@@ -20,7 +22,7 @@ export default function Rental({ rentalsDatas }) {
 			<>
 				<div className='container'>
 					<div className='container_content'>
-						<Header />
+						<Header activePage={activePage} />
 						<MainRental rentalData={rentalData} />
 					</div>
 					<Footer />
