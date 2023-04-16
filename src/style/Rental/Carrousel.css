@@ -30,3 +30,12 @@
 	border-radius: 1.563em;
 	object-fit: cover;
 }
+
+.carrouselPagination {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	color: white;
+	font-size: 1.125em;
+	padding-bottom: 1em;
+}
